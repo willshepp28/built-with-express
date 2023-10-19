@@ -10,6 +10,10 @@ application.get("/", (request, response) => {
     response.json({ message: 'Welcome to Built with Express'})
 })
 
+application.get("/test", (request, response) => {
+    response.json({ message: 'Testing'})
+})
+
 application.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
